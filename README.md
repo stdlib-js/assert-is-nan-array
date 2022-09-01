@@ -24,20 +24,30 @@ limitations under the License.
 
 > Test if a value is an array-like object containing only NaN values.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-nan-array
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import isNaNArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nan-array@esm/index.mjs';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { objects, primitives } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nan-array@esm/index.mjs';
+var isNaNArray = require( '@stdlib/assert-is-nan-array' );
 ```
 
 #### isNaNArray( value )
@@ -59,7 +69,7 @@ Tests if a `value` is an array-like object containing **only** primitive `NaN` v
 <!-- eslint-disable no-new-wrappers -->
 
 ```javascript
-import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@esm/index.mjs';
+var Number = require( '@stdlib/number-ctor' );
 
 var bool = isNaNArray.primitives( [ NaN, NaN, NaN ] );
 // returns true
@@ -75,7 +85,7 @@ Tests if a `value` is an array-like object containing **only** object `NaN` valu
 <!-- eslint-disable no-new-wrappers -->
 
 ```javascript
-import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@esm/index.mjs';
+var Number = require( '@stdlib/number-ctor' );
 
 var bool = isNaNArray.objects( [ new Number( NaN ), new Number( NaN ) ] );
 // returns true
@@ -99,15 +109,10 @@ bool = isNaNArray.objects( [ NaN, NaN, NaN ] );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@esm/index.mjs';
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
-import isNaNArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nan-array@esm/index.mjs';
+```javascript
+var Number = require( '@stdlib/number-ctor' );
+var Float64Array = require( '@stdlib/array-float64' );
+var isNaNArray = require( '@stdlib/assert-is-nan-array' );
 
 var bool = isNaNArray( [ NaN ] );
 // returns true
@@ -129,10 +134,6 @@ bool = isNaNArray( [ 'a', 'b', 'c' ] );
 
 bool = isNaNArray( [ 'a', NaN ] );
 // returns false
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -162,7 +163,7 @@ bool = isNaNArray( [ 'a', NaN ] );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -224,7 +225,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-nan]: https://github.com/stdlib-js/assert-is-nan/tree/esm
+[@stdlib/assert/is-nan]: https://github.com/stdlib-js/assert-is-nan
 
 <!-- </related-links> -->
 
