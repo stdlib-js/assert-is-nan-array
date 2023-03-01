@@ -148,7 +148,7 @@ bool = isNaNArray( [ 'a', NaN ] );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/assert/is-nan`][@stdlib/assert/is-nan]</span><span class="delimiter">: </span><span class="description">test if a value is NaN.</span>
+-   <span class="package-name">[`@stdlib/assert-is-nan`][@stdlib/assert/is-nan]</span><span class="delimiter">: </span><span class="description">test if a value is NaN.</span>
 
 </section>
 
