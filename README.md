@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isNaNArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nan-array@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-nan-array/tags). For example,
+
+```javascript
 import isNaNArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nan-array@v0.2.1-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { objects, primitives } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nan-array@v0.2.1-esm/index.mjs';
+import { objects, primitives } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nan-array@esm/index.mjs';
 ```
 
 #### isNaNArray( value )
@@ -118,7 +123,7 @@ bool = isNaNArray.objects( [ NaN, NaN, NaN ] );
 
 import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@esm/index.mjs';
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
-import isNaNArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nan-array@v0.2.1-esm/index.mjs';
+import isNaNArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nan-array@esm/index.mjs';
 
 var bool = isNaNArray( [ NaN ] );
 // returns true
