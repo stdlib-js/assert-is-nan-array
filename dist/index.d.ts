@@ -1,3 +1,3 @@
 /// <reference path="../docs/types/index.d.ts" />
-import isNumberArray from '../docs/types/index';
-export = isNumberArray;
+import isNaNArray from '../docs/types/index';
+export = isNaNArray;
